@@ -50,11 +50,18 @@
           font-weight: 600;
           font-style: normal;
         }
+
+        img {
+          max-width: 30%;
+          max-height: 30vh;
+          height: auto;
+          aspect-ratio: 1/1;
+        }
       </style>
 </head>
 <body class="h-[100vh] bg-Grey900 flex justify-center items-center">
-    <div class="w-[25%] max-h-[80%] mobile:w-[90%] mobile:max-h-[90%] sm:w-[80%] sm:max-h-[90%] lg:w-[40%] lg:max-h-[90%] bg-Grey800 rounded-xl flex justify-center items-center flex-col pt-10">
-        <img class="rounded-[50%] size-1/5" src="avatar-jessica.jpeg" alt="">
+    <div class="w-[25%] max-h-[80%] min-h-[500px] h-full mobile:w-[90%] mobile:max-h-[90%] sm:w-[80%] sm:max-h-[90%] lg:w-[40%] lg:max-h-[90%] bg-Grey800 rounded-xl flex justify-center items-center flex-col pt-10 overflow-y-auto">
+        <img class="rounded-[50%] size-1/5" src="avatar-jessica.jpeg" alt="Profile Picture">
         <h1 class="text-[28px] text-White pt-5">Jessica Randall</h1>
         <p class="text-[14px] text-Green font-bold py-1">London, United Kingdom</p>
         <p class="text-[14px] text-White pt-5">"Front-end developer and avid reader."</p>
