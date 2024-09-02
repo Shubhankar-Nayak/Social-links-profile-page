@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                Green: 'hsl(75, 94%, 57%)',
+
+                White: 'hsl(0, 0%, 100%)',
+
+                Grey700: 'hsl(0, 0%, 20%)',
+                Grey800: 'hsl(0, 0%, 12%)',
+                Grey900: 'hsl(0, 0%, 8%)',
+              }
+            },
+            screens: {
+              'mobile': {'max': '375px'},
+              'sm': {'min': '376px' ,'max': '639px'},
+              'lg': {'min': '640px' ,'max': '1023px'},
+            }
+          }
+        }
+      </script>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        h1{
+          font-family: "Inter";
+          font-optical-sizing: auto;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        p{
+          font-family: "Inter",serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        button>p{
+          font-family: "Inter",serif;
+          font-optical-sizing: auto;
+          font-weight: 600;
+          font-style: normal;
+        }
+      </style>
+</head>
+<body class="h-[100vh] bg-Grey900 flex justify-center items-center">
+    <div class="w-[25%] max-h-[80%] mobile:w-[90%] mobile:max-h-[90%] sm:w-[80%] sm:max-h-[90%] lg:w-[40%] lg:max-h-[90%] bg-Grey800 rounded-xl flex justify-center items-center flex-col pt-10">
+        <img class="rounded-[50%] size-1/5" src="avatar-jessica.jpeg" alt="">
+        <h1 class="text-[28px] text-White pt-5">Jessica Randall</h1>
+        <p class="text-[14px] text-Green font-bold py-1">London, United Kingdom</p>
+        <p class="text-[14px] text-White pt-5">"Front-end developer and avid reader."</p>
+        <div class="text-White w-[100%] flex flex-col items-center gap-4 py-10">
+            <button class="bg-Grey700 w-[80%] py-2 rounded-lg hover:bg-Green hover:text-Grey800 focus:bg-Green focus:text-Grey800 duration-300"><p>GitHub</p></button>
+            <button class="bg-Grey700 w-[80%] py-2 rounded-lg hover:bg-Green hover:text-Grey800 focus:bg-Green focus:text-Grey800 duration-300"><p>Frontend Mentor</p></button>
+            <button class="bg-Grey700 w-[80%] py-2 rounded-lg hover:bg-Green hover:text-Grey800 focus:bg-Green focus:text-Grey800 duration-300"><p>LinkedIn</p></button>
+            <button class="bg-Grey700 w-[80%] py-2 rounded-lg hover:bg-Green hover:text-Grey800 focus:bg-Green focus:text-Grey800 duration-300"><p>Twitter</p></button>
+            <button class="bg-Grey700 w-[80%] py-2 rounded-lg hover:bg-Green hover:text-Grey800 focus:bg-Green focus:text-Grey800 duration-300"><p>Instagram</p></button>
+        </div>
+    </div>
+</body>
+</html>
